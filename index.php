@@ -60,12 +60,13 @@ $date = date('l');
 		
 		<ol id="techlist"></ol>
 		
-		<p><?php echo $date; ?></p>
+
 		
 		<?php
 		echo "<p>Today is " . date("l F d, Y") . "</p>";		
-		echo "<p>The time is " . date("h:i:sa ( e )" ) . "</p>";
-		//$date = "Sunday";
+		echo "<p>The time is " . date("h:i ( e )" ) . "</p>";
+
+		// Mix of PHP and HTML in a block
 		switch ($date) {
 			case "Sunday":  ?>
 				<p>The Babylonians named Sunday after the Sun</p>
